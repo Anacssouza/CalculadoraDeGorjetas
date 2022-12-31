@@ -1,53 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title> Calculadora de Gorjetas </title>
+
+  <link rel="stylesheet" href="./style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-  <div id="container">
-    <div>
-      <h1 class="title"> Calculadora de Gorjetas </h1>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="box"></div>
+  <div class="container-forms">
+    <div class="container-info">
+      <div class="info-item">
+        <div class="table">
+          <div class="table-cell">
+            <p>
+              Deseja calcular o valor da gorjeta?
+            </p>
+            <div class="btn">
+              Sim
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="table">
+          <div class="table-cell">
+            <p>
+              Deseja acessar a calculadora?
+            </p>
+            <div class="btn">
+              Sim
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <form class="tipsForm" id="tipsForm">
-        <label for="bill"> 
-          <p> Quanto ficou a conta? </p>
-        </label>
-        <p> 
-          R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required>
-        </p>
-        <label for="gorjeta">
-          <p> Como foi o serviço? </p>
-        </label>
-        <p>
-          <select name="gorjeta" id="gorjeta" class="formSelect" required>
-            <option disabled selected> -- Escolha uma opção -- </option>
-            <option value="0.3"> 30% - Incrível </option>
-            <option value="0.2"> 20% - Bom </option>
-            <option value="0.1"> 10% - Aceitável </option>
-            <option value="0.05"> 05% - razoável </option>
-            <option value="0.0"> Não quero deixar gorjetas </option>
-          </select>
-        </p>
-        <label for="people">
-          <p> Quantas pessoas vão dividir a conta? </p>
-        </label>
-        <p>
-          <input type="number" name="people" placeholder="1" id="people" class="formInput" required> Pessoa(s)
-        </p>
-        <button type="submit" class="formSubmit"> Calcular </button>
-      </form>
-    </div>
-    <div class="totalTips" id="totalTips">
-      Gorjeta total: 
-      R$ <span id="tip"> 00.00 </span>
-      <span id="each"> cada </span>
+    <div class="container-form">
+      <div class="form-item log-in">
+        <div class="table">
+          <p> Calcular gorjeta </p>
+          <div class="table-cell">
+            <input name="Total" placeholder="Total da Conta" type="text" required />
+            <input name="People" placeholder="Total de pessoas que irão dividir" type="number" required  />
+            <select name="Tips" placeholder="Porcentagem de gorjeta" type="number" required />
+              <option value="0.3"> 30% - Adorei o serviço </option>
+              <option value="0.2"> 20% - Serviço bom </option>
+              <option value="0.1"> 10% - Achei o serviço razoável </option>
+              <option value="0.05"> 05% - O serviço é aceitável </option>
+            </select>
+            <div class="btn">
+              Calcular
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="total form-item sign-up"> Calcular total da conta </p>
+      <div class="form-item sign-up">
+        <div class="display"> R$10.00 </div>
+        <div class="table_">
+          <button class="btn-calc"> C </button>
+          <button class="btn-calc"> < </button>
+          <button class="btn-calc"> % </button>
+          <button class="btn-calc"> / </button>
+          <button class="btn-calc"> 7 </button>
+          <button class="btn-calc"> 8 </button>
+          <button class="btn-calc"> 9 </button>
+          <button class="btn-calc"> x </button>
+          <button class="btn-calc"> 4 </button>
+          <button class="btn-calc"> 5 </button>
+          <button class="btn-calc"> 6 </button>
+          <button class="btn-calc"> - </button>
+          <button class="btn-calc"> 1 </button>
+          <button class="btn-calc"> 2 </button>
+          <button class="btn-calc"> 3 </button>
+          <button class="btn-calc"> + </button>
+          <button class="btn-calc"> 0 </button>
+          <button class="btn-calc"> , </button>
+          <button class="btn-calc " id="equal"> = </button>
+          <!-- <p> Calcular Total da conta </p>
+          <div class="table-cell">
+            <input name="food" placeholder="Comidas consumidas" type="text" />
+            <input name="drink" placeholder="Bebidas consumidas" type="text" />
+            <div class="btn">
+              Calcular total
+            </div>
+          </div> -->
+        </div>
+      </div>
     </div>
   </div>
-  <script type="text/javascript" src="scripts.js"></script>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script  src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </body>
 </html>
