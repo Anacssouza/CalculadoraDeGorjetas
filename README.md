@@ -17,7 +17,8 @@ Ainda em desenvolvimento
 
 - Ainda está em desenvolvimento, contudo, o objetivo é que ao abrir a calculadora seja possível realizar contas normalmente, e que ao abrir a parte de calculo das gorjetas, após inserir o valor da conta, quantidade de pessoas e um percentual para as gorjetas, seja possível obter o valor total da conta (gastos + gorjeta), e quanto cada pessoa que está dividindo a conta em questão deverá pagar.
 
-- Deploy: https://calculadora-de-gorjetas-ac.vercel.app/
+- Você pode acessar a plataforma através do link abaixo:
+  - Deploy: https://calculadora-de-gorjetas-ac.vercel.app/
 
 <h2> ✨ Tecnologias utilizadas </h2>
 
